@@ -4,20 +4,26 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// const path = require(`path`);
+const path = require('path');
 
-exports.createPages = ({ actions }) => {
+exports.createPages = async ({ actions }) => {
   const { createPage } = actions;
-
+  /**
+   * Homepage
+   */
   createPage({
-    path: `/`,
-    component: require.resolve('./src/pages/index.js'),
-    context: { page: 'home' },
+    path: '/',
+    component: path.resolve('./src/pages/homepage/Homepage.js'),
+    context: {
+      page: 'home',
+    },
   });
 
   createPage({
-    path: `/policy`,
-    component: require.resolve('./src/pages/policy/policy.js'),
-    context: {},
+    path: '/login',
+    component: path.resolve('./src/pages/login/LoginPage.js'),
+    context: {
+      page: 'login',
+    },
   });
 };

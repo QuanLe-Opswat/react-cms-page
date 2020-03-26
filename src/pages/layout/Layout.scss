@@ -1,0 +1,16 @@
+@import "../../Bootstrap";
+
+.layoutMain {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  .sideBar {
+    width: 150px;
+  }
+
+  .main {
+    width: calc(100% - 150px);
+    height: 100%;
+  }
+}

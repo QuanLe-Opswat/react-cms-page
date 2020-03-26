@@ -4,4 +4,13 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+const { WrapPage, WrapRoot } = require('./src/WrapPage');
+
+exports.wrapPageElement = ({ element, props }) => {
+  return WrapPage({ element, props });
+};
+
+exports.wrapRootElement = ({ element }) => {
+  return WrapRoot({ element });
+};
+
