@@ -22,7 +22,7 @@
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "read-excel-file": "^4.0.6",
+    "read-excel-file": "^4.1.0",
     "classnames": "^2.2.6"
   },
   "devDependencies": {
